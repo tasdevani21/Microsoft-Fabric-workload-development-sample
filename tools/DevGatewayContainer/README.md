@@ -10,7 +10,7 @@ Before you begin, ensure you have the following installed:
 - Docker
 - Docker Compose
 
-> For developers using Apple Silicon processors(M-Series), make sure you enable `Use Rosetta for x86/amd64 on Apple Silicon` in Docker.
+> For developers using Apple Silicon processors(M-Series), make sure you enable `Use Rosetta for x86/amd64 on Apple Silicon` in Docker. See [here](https://docs.docker.com/desktop/settings-and-maintenance/settings/#general) for more details.
 
 ## Getting Started
 
@@ -26,7 +26,7 @@ cp sample.env .env
 | ---------------------------- | -------------------------------------------------------------------------------------- |
 | `ENTRA_TENANT_ID`            | Fabric instance's Tenant ID                                                            |
 | `WORKSPACE_GUID`             | User's Workspace ID                                                                    |
-| `MANIFEST_PACKAGE_FILE_PATH` | **Full Path** to the Fabric workload backend `ManifestPackage.1.0.0.nupkg` build file. |
+| `MANIFEST_PACKAGE_FILE_PATH` | **Full Path** to the Fabric workload backend `ManifestPackage.1.0.0.nupkg` build file. Example: `/Users/Username/Microsoft-Fabric-workload-development-sample/Backend/src/bin/Debug/ManifestPackage.1.0.0.nupkg` |
 | `LOCAL_BACKEND_PORT`         | Fabric workload backend port. Default: `5000`                                          |
 | `LOG_LEVEL`                  | DevGateway application log level. Default: `Information`                               |
 
